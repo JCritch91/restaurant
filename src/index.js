@@ -1,19 +1,19 @@
 import './style.css'
-import { functionOne } from "./home"
+import { homeFunction } from "./home"
+import { menuFunction } from "./menu";
 
 function populatePage(){
     const content = document.getElementById('content')
 
     const populateHome = () =>{
         content.replaceChildren()
-        console.log('home')
-
-        functionOne()
+        homeFunction()
     }
 
-
     const populateMenu = () =>{
+        content.replaceChildren()
         console.log('menu')
+        menuFunction()
     }
 
 
@@ -38,7 +38,8 @@ function populatePage(){
             }
         })
     })
-
+    populateHome()
 }
 
 populatePage()
+

@@ -11,6 +11,7 @@ body{
     gap: 40px;
     background-image: url('https://images.pexels.com/photos/52706/pexels-photo-52706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -54,26 +55,43 @@ button{
     justify-content: space-between;
 }
 
-.home{
+.home,.menu,.about{
     width: 45vw;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 h1{
     margin: 0px;
 }
 
-p{
+h2{
+    align-self: flex-start;
+    padding-left: 40px;
+}
+
+.subSection, .subSection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #15803d;
+    border-radius: 8px;
+    width: 45vw;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.itemContainer{
     text-align: center;
     margin: 0px;
     padding: 5%;
-    border: 10px solid black;
+    border: 8px solid #15803d;
     border-radius: 8px;
-    width: 75%;
+    width: 50%;
 }
 
 
