@@ -1,6 +1,7 @@
 import './style.css'
 import { homeFunction } from "./home"
 import { menuFunction } from "./menu";
+import { aboutFunction } from "./about" 
 
 function populatePage(){
     const content = document.getElementById('content')
@@ -19,7 +20,9 @@ function populatePage(){
 
 
     const populateAbout = () =>{
+        content.replaceChildren()
         console.log('about')
+        aboutFunction()
     }
 
 

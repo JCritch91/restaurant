@@ -98,9 +98,21 @@ h2{
 footer{
     height: 5vh;
     width: 95%;
-    border: 1px solid black;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: auto;
+    color: white;
+    gap: 20px;
 
 }
+
+#github {
+    max-height: 25px;
+    border-radius: 20px;
+    transition: transform .7s ease-in-out;
+  }
+
+  #github:hover{
+      transform: rotate(720deg);
+  }
