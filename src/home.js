@@ -1,5 +1,4 @@
 const homeFunction = () =>{
-    console.log('hello from home')
 
     let homeArray = [
         {
@@ -14,7 +13,6 @@ const homeFunction = () =>{
             name: 'Location',
             description: 'Mountain range <br> Sichuan <br> China'
         }
-
     ]
 
     let container, div, p, h1, h3

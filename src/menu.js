@@ -1,7 +1,6 @@
 
 
 const menuFunction = () =>{
-    console.log('hello from menuFunction')
 
     let drinks = [
         {
@@ -107,17 +106,7 @@ const menuFunction = () =>{
         subSection2.appendChild(div)
     }
     mainContainer.appendChild(subSection2)
-
-
-
-
-
-
     content.appendChild(mainContainer)
-
-
-
-
 }
 
 export {menuFunction}

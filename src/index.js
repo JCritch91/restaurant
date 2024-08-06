@@ -13,23 +13,21 @@ function populatePage(){
 
     const populateMenu = () =>{
         content.replaceChildren()
-        console.log('menu')
         menuFunction()
     }
 
-
-
     const populateAbout = () =>{
         content.replaceChildren()
-        console.log('about')
         aboutFunction()
     }
-
-
 
     const button = document.querySelectorAll('button')
     button.forEach(btn =>{
         btn.addEventListener('click', event =>{
+            button.forEach(btn =>{
+                btn.classList.remove('selected')
+                event.target.classList.add('selected')
+            })
             if (event.target.id == 'home'){
                 populateHome()
             }
